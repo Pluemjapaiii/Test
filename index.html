@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Anniversary</title>
+  <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Carattere&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Carattere', sans-serif;  
+      background: linear-gradient(to bottom, #f7c6d1, #fff); 
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .page-container {
+      border: 5px solid #f06292;
+      border-radius: 10px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 90%;
+      max-width: 600px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    h1 {
+      color: #f06292;
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.5rem;
+      color: #000;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: white;
+      background: #f06292;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="page1" class="page-container">
+    <img src="IMG_2889.JPG" alt="Anniversary Image">
+    <h1>คุณวิราศิณีครับ....ผมมีอะไรอยากจะบอกกับคุณ!</h1>
+    <p>"คุณจะเปิดหรือไม่เปิด"</p>
+    <button onclick="goToNextPage()">Yes</button>
+    <button>No</button>
+  </div>
+  <div id="page2" class="page-container" style="display: none;">
+    <img src="1714074160255.jpg" alt="Happy Anniversary Image 1">
+    <h1>Happy anniversary 1 year nakubb!! 💐</h1>
+    <p>ขอบคุณที่อยู่ข้างๆมาตลอดนะครับบ</p>
+    <p><a href="https://youtu.be/Oz6LL1o9Fog?si=LnYBhcLN_kiIDfY2" target="_blank">คลิกเพื่อเปิดเพลง</a></p>
+  </div>
+  <script>
+    function goToNextPage() {
+      document.getElementById('page1').style.display = 'none';
+      document.getElementById('page2').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
